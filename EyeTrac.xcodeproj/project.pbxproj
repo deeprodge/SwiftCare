@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED59826F2CA9253E00AC9F82 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ED59826E2CA9253E00AC9F82 /* FirebaseAnalytics */; };
+		ED5982712CA9253E00AC9F82 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ED5982702CA9253E00AC9F82 /* FirebaseDatabase */; };
+		ED5982732CA9253E00AC9F82 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = ED5982722CA9253E00AC9F82 /* FirebaseFunctions */; };
+		ED5982752CA925A800AC9F82 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = ED5982742CA925A800AC9F82 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ED5982512CA901FF00AC9F82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,38 @@
 		ED59825A2CA901FF00AC9F82 /* EyeTracUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeTracUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ED59827A2CA92B9000AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTracTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = ED59824F2CA901FF00AC9F82 /* EyeTracTests */;
+		};
+		ED59827B2CA92B9000AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTracUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = ED5982592CA901FF00AC9F82 /* EyeTracUITests */;
+		};
+		ED59827D2CA944A500AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTrac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = ED59823E2CA901FD00AC9F82 /* EyeTrac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		ED5982412CA901FD00AC9F82 /* EyeTrac */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				ED59827D2CA944A500AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTrac" target */,
+				ED59827A2CA92B9000AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTracTests" target */,
+				ED59827B2CA92B9000AC9F82 /* Exceptions for "EyeTrac" folder in "EyeTracUITests" target */,
+			);
 			path = EyeTrac;
 			sourceTree = "<group>";
 		};
@@ -52,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5982752CA925A800AC9F82 /* FirebaseMessaging in Frameworks */,
+				ED5982732CA9253E00AC9F82 /* FirebaseFunctions in Frameworks */,
+				ED5982712CA9253E00AC9F82 /* FirebaseDatabase in Frameworks */,
+				ED59826F2CA9253E00AC9F82 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +152,10 @@
 			);
 			name = EyeTrac;
 			packageProductDependencies = (
+				ED59826E2CA9253E00AC9F82 /* FirebaseAnalytics */,
+				ED5982702CA9253E00AC9F82 /* FirebaseDatabase */,
+				ED5982722CA9253E00AC9F82 /* FirebaseFunctions */,
+				ED5982742CA925A800AC9F82 /* FirebaseMessaging */,
 			);
 			productName = EyeTrac;
 			productReference = ED59823F2CA901FD00AC9F82 /* EyeTrac.app */;
@@ -195,6 +239,9 @@
 			);
 			mainGroup = ED5982362CA901FD00AC9F82;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED5982402CA901FD00AC9F82 /* Products */;
 			projectDirPath = "";
@@ -396,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeTrac/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,6 +483,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EyeTrac/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -591,6 +640,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED59826E2CA9253E00AC9F82 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ED5982702CA9253E00AC9F82 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		ED5982722CA9253E00AC9F82 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		ED5982742CA925A800AC9F82 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED59826D2CA9253E00AC9F82 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED5982372CA901FD00AC9F82 /* Project object */;
 }
